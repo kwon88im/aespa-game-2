@@ -47,18 +47,18 @@
         const BOARD_HEIGHT = 20;
         const BLOCK_SIZE = 30;
 
-    const AESPA_MEMBERS = [
-           { 
+        const AESPA_MEMBERS = [
+          { 
             name: 'KARINA', 
             color: 'bg-pink-500', 
             border: 'border-pink-600',
             images: [
-      './images/karina1.jpg',
-      './images/karina2.jpg',
-      './images/karina3.jpg',
-      './images/karina4.jpg',
-      './images/karina5.jpg',
-      './images/karina6.jpg'
+              './images/karina1.jpg',
+              './images/karina2.jpg',
+              './images/karina3.jpg',
+              './images/karina4.jpg',
+              './images/karina5.jpg',
+              './images/karina6.jpg'
             ]
           },
           { 
@@ -66,12 +66,12 @@
             color: 'bg-purple-500', 
             border: 'border-purple-600',
             images: [
-      './images/giselle1.jpg',
-      './images/giselle2.jpg',
-      './images/giselle3.jpg',
-      './images/giselle4.jpg',
-      './images/giselle5.jpg',
-      './images/giselle6.jpg'
+              './images/giselle1.jpg',
+              './images/giselle2.jpg',
+              './images/giselle3.jpg',
+              './images/giselle4.jpg',
+              './images/giselle5.jpg',
+              './images/giselle6.jpg'
             ]
           },
           { 
@@ -79,12 +79,12 @@
             color: 'bg-blue-500', 
             border: 'border-blue-600',
             images: [
-      './images/winter1.jpg',
-      './images/winter2.jpg',
-      './images/winter3.jpg',
-      './images/winter4.jpg',
-      './images/winter5.jpg',
-      './images/winter6.jpg'
+              './images/winter1.jpg',
+              './images/winter2.jpg',
+              './images/winter3.jpg',
+              './images/winter4.jpg',
+              './images/winter5.jpg',
+              './images/winter6.jpg'
             ]
           },
           { 
@@ -92,24 +92,24 @@
             color: 'bg-yellow-400', 
             border: 'border-yellow-500',
             images: [
-      './images/ning1.jpg',
-      './images/ning2.jpg',
-      './images/ning3.jpg',
-      './images/ning4.jpg',
-      './images/ning5.jpg',
-      './images/ning6.jpg'
-        ]
-      }
-    ];
+              './images/ning1.jpg',
+              './images/ning2.jpg',
+              './images/ning3.jpg',
+              './images/ning4.jpg',
+              './images/ning5.jpg',
+              './images/ning6.jpg'
+            ]
+          }
+        ];
 
         const SHAPES = [
-          [[1, 1, 1, 1]], 			// I
-          [[1, 1], [1, 1]], 		// O
-          [[0, 1, 0], [1, 1, 1]], 	// T
-          [[1, 0, 0], [1, 1, 1]], 	// L
-          [[0, 0, 1], [1, 1, 1]], 	// J
-          [[0, 1, 1], [1, 1, 0]], 	// S
-          [[1, 1, 0], [0, 1, 1]] 	// Z
+          [[1, 1, 1, 1]], // I
+          [[1, 1], [1, 1]], // O
+          [[0, 1, 0], [1, 1, 1]], // T
+          [[1, 0, 0], [1, 1, 1]], // L
+          [[0, 0, 1], [1, 1, 1]], // J
+          [[0, 1, 1], [1, 1, 0]], // S
+          [[1, 1, 0], [0, 1, 1]] // Z
         ];
 
         const AespaTetris = () => {
@@ -583,7 +583,7 @@
 
                     <div className="border-t border-gray-600 pt-4 space-y-2">
                       <div className="text-white font-bold text-sm mb-2">Members:</div>
-                      <div className="text-xs text-gray-300 mb-2">Each member has 3 different pictures!</div>
+                      <div className="text-xs text-gray-300 mb-2">Each member has 6 different pictures!</div>
                       {AESPA_MEMBERS.map(member => (
                         <div key={member.name} className="flex items-center gap-2">
                           <div className={`w-6 h-6 ${member.color} border-2 ${member.border} rounded`}></div>
@@ -601,8 +601,8 @@
                       <a href="https://twitter.com/kwon88im" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition block">
                         @KWON88IM
                       </a>
-                      <div className="text-gray-400 text-xs mt-2">Song by Walen "Gameboy"</div>
-					  <div className="text-gray-400 text-xs mt-2">Version 1.0.0</div>
+                      <div className="text-gray-400 text-xs mt-2">Song by Walen - Gameboy</div>
+                      <div className="text-gray-400 text-xs mt-2">Version 1.0.0</div>
                     </div>
                   </div>
                 </div>
